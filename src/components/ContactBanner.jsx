@@ -9,31 +9,31 @@ const ContactBanner = () => {
                   className="contact-mover"
                   style={{ animationDuration: "22s" }}
                >
-                  <span>schroeder.riccardo@gmail.com</span>
+                  <span>exampleMail@gmail.com</span>
                </div>
                <div
                   className="contact-mover"
                   style={{ animationDuration: "22s" }}
                >
-                  <span>schroeder.riccardo@gmail.com</span>
+                  <span>exampleMail@gmail.com</span>
                </div>
                <div
                   className="contact-mover"
                   style={{ animationDuration: "22s" }}
                >
-                  <span>schroeder.riccardo@gmail.com</span>
+                  <span>exampleMail@gmail.com</span>
                </div>
                <div
                   className="contact-mover"
                   style={{ animationDuration: "22s" }}
                >
-                  <span>schroeder.riccardo@gmail.com</span>
+                  <span>exampleMail@gmail.com</span>
                </div>
                <div
                   className="contact-mover"
                   style={{ animationDuration: "22s" }}
                >
-                  <span>schroeder.riccardo@gmail.com</span>
+                  <span>exampleMail@gmail.com</span>
                </div>
             </div>
          </button>
@@ -42,3 +42,7 @@ const ContactBanner = () => {
 };
 
 export default ContactBanner;
+
+{
+   /* <span>schroeder.riccardo@gmail.com</span> */
+}
