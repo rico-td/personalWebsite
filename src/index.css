@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* global variables */
+:root {
+  --background-dark: #121212;
+  --background-light: #f8f9fc;
+  --text-color: #ffffff;
+  --hightlight-color: #ff0000;
+}
+
+/* styles for root element */
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* styles for all elements */
+*,::after,::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+

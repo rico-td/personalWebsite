@@ -1,0 +1,66 @@
+h1 {
+    color: var(--background-color)
+}
+
+body {
+  background-color: var(--background-dark);
+}
+
+@keyframes contact-banner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.contact-copy-button {
+  position: absolute; 
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 35px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.contact-mover {
+  padding-right: 50px;
+  display: inline-flex;
+  align-items: center;
+  animation: contact-banner 20s linear infinite;
+    animation-duration: 20s;
+    animation-play-state: running;
+  animation-play-state: running;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.contact-banner {
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  border-bottom: 1px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+  transform: translateZ(0) rotate(-90deg) translateX(-100%);
+  background-color: var(--background-dark);
+  z-index: 99;
+  cursor: pointer;
+}
+
+.contact-banner:hover {
+  background-color: var(--background-light);
+  color: black;
+}
+
+/* .contact-banner :is(span) {
+ 
+  } */
