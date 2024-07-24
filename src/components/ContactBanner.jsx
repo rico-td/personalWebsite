@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactBanner = () => {
    return (
-      <button className="contact-copy-button">
-         <div className="text-white contact-banner">
+      <button className="contact-copy-button absolute uppercase font-light text-2xl">
+         <div className="text-white contact-banner py-2 transition-backgroundColor:2s:ease-in">
             <div className="contact-mover" style={{ animationDuration: "22s" }}>
                <span>schroeder.riccardo@gmail.com</span>
             </div>
