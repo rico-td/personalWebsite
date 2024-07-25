@@ -5,10 +5,10 @@
 
 /* global variables */
 :root {
-  --background-dark: #121212;
-  --background-light: #f8f9fc;
-  --text-color: #ffffff;
-  --hightlight-color: #ff0000;
+  --background-dark: #121212 !important;;
+  --background-light: #f8f9fc !important;;
+  --text-light: #ffffff !important;
+  --hightlight-bluish: #6ea5d8 !important;;
 }
 
 /* styles for root element */

@@ -1,0 +1,11 @@
+.contact-banner {
+    color: var(--text-light);
+    background-color: var(--background-dark);
+    border-bottom: 2px solid var(--hightlight-bluish);
+    transform-origin: left top;
+    transform: translateZ(0) rotate(-90deg) translateX(-100%);
+}
+
+.contact-copy-button {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
