@@ -59,14 +59,22 @@ const ContactBanner = () => {
             className="contact-mover pr-[75px] inline-flex"
             style={{ animationDuration: "22s" }}
          >
-            <span>exampleMail@gmail.com</span>
+            <span id="textElementContact">exampleMailForTest@gmail.com</span>
          </div>
       );
    }
 
    return (
       <>
-         <button className="contact-copy-button absolute top-0 left-0 uppercase font-light text-2xl">
+         <button
+            onClick={() => {
+               const contactAdress = document.querySelector(
+                  "#textElementContact"
+               ).innerHTML;
+               console.log(contactAdress);
+            }}
+            className="contact-copy-button absolute top-0 left-0 uppercase font-light text-2xl"
+         >
             <div
                className="contact-banner w-[100vh] h-[50px] fixed top-0 left-0 flex items-center whitespace-nowrap
             overflow-hidden py-2 cursor-pointer z-99"
