@@ -1,11 +1,11 @@
 import "./App.css";
-import ContactBanner from "./components/contactBanner/ContactBannerr";
+import ContactBannerr from "./components/contactBanner/ContactBannerr";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
    return (
       <>
-         <ContactBanner />
+         <ContactBannerr />
          <Navbar />
          <div className="h-[100vh] bg-black"></div>
          <div className="h-[100vh] bg-white"></div>
