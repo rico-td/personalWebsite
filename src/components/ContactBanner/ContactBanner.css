@@ -6,6 +6,18 @@
     transform: translateZ(0) rotate(-90deg) translateX(-100%);
 }
 
-.contact-copy-button {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-  }
+.name-banner h1 {
+  font-family: "Mariyam", sans-serif;
+   padding-left: 0.5em;
+  font-size: max(3em, 6vw);
+  white-space: nowrap;
+  pointer-events: none;
+
+}
+/* .name-banner h1 span {
+  font-size: max(2em, 5vw);
+  white-space: nowrap;
+} */
+/* color: white;
+font-size: clamp(16px, 1.2vw, 19px);
+font-weight: 600; */

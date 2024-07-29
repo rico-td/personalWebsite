@@ -1,0 +1,9 @@
+.button  {
+    font-family: Mariyam;
+    font-weight: 700;
+}
+
+.homeButton {
+    backdrop-filter: blur(10px); /* Hier kannst du den Unschärfe-Effekt anpassen */
+    background-color: rgba(255, 255, 255, 0.5); 
+}
