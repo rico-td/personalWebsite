@@ -54,11 +54,7 @@ const ContactBanner = () => {
    const elements = [];
    for (let i = 0; i < 5; i++) {
       elements.push(
-         <div
-            key={i}
-            className="contact-mover pr-[75px] inline-flex"
-            style={{ animationDuration: "22s" }}
-         >
+         <div key={i} className="contact-mover pr-[75px] inline-flex">
             <span id="textElementContact">exampleMailForTest@gmail.com</span>
          </div>
       );
