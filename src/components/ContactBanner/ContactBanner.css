@@ -1,23 +1,16 @@
 .contact-banner {
-    color: var(--text-light);
-    background-color: var(--background-dark);
-    border-bottom: 2px solid var(--hightlight);
-    transform-origin: left top;
-    transform: translateZ(0) rotate(-90deg) translateX(-100%);
+  color: var(--text-light);
+  background-color: var(--background-dark);
+  border-bottom: 2px solid var(--hightlight);
+  transform-origin: left top;
+  transform: translateZ(0) rotate(-90deg) translateX(-100%);
 }
 
 .name-banner h1 {
-  font-family: "Mariyam", sans-serif;
-   padding-left: 0.5em;
-  font-size: max(3em, 6vw);
+  font-family: "Exquite", sans-serif;
+  padding-left: 0.5em;
+  font-size: max(3em, 9vw);
   white-space: nowrap;
   pointer-events: none;
-
+  letter-spacing: 0.5rem;
 }
-/* .name-banner h1 span {
-  font-size: max(2em, 5vw);
-  white-space: nowrap;
-} */
-/* color: white;
-font-size: clamp(16px, 1.2vw, 19px);
-font-weight: 600; */

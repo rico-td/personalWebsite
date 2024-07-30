@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* global variables */
 :root {
   --background-dark: #121212 !important;
   --background-light: #f8f9fc !important;
-  --background-gray: #999D9E !important;;
+  --background-gray: #999d9e !important;
   --text-light: #ffffff !important;
-  --text-dark: #121212!important;
+  --text-dark: #121212 !important;
   --hightlight: #5e191c !important;
-
 }
 
 /* styles for root element */
@@ -19,14 +17,13 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
- 
 }
 
 /* styles for all elements */
-*,::after,::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-

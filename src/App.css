@@ -7,8 +7,8 @@ body {
 
 /* ------------------------------ */
 @font-face {
-  font-family: gonestone; 
-  src: url('../public/assets/fonts/Gonestone.ttf') format('truetype'),
+  font-family: gonestone;
+  src: url("../public/assets/fonts/Gonestone.ttf") format("truetype");
 }
 
 .gonestone {
@@ -18,8 +18,8 @@ body {
 /* ------------------------------ */
 
 @font-face {
-  font-family: rionaldo; 
-  src: url('../public/assets/fonts/Rionaldo.ttf') format('truetype'),
+  font-family: rionaldo;
+  src: url("../public/assets/fonts/Rionaldo.ttf") format("truetype");
 }
 
 .gonestone {
@@ -30,8 +30,8 @@ body {
 /* ------------------------------ good */
 
 @font-face {
-  font-family: Cottage; 
-  src: url('../public/assets/fonts/Cottage.ttf') format('truetype'),
+  font-family: Cottage;
+  src: url("../public/assets/fonts/Cottage.ttf") format("truetype");
 }
 
 .gonestone {
@@ -42,8 +42,8 @@ body {
 /* ------------------------------ good */
 
 @font-face {
-  font-family: Exquite; 
-  src: url('../public/assets/fonts/Exquite.ttf') format('truetype'),
+  font-family: Exquite;
+  src: url("../public/assets/fonts/Exquite.ttf") format("truetype");
 }
 
 .gonestone {
@@ -54,8 +54,8 @@ body {
 /* ------------------------------ */
 
 @font-face {
-  font-family: Klotee; 
-  src: url('../public/assets/fonts/Klotee.ttf') format('truetype'),
+  font-family: Klotee;
+  src: url("../public/assets/fonts/Klotee.ttf") format("truetype");
 }
 
 .gonestone {
@@ -66,8 +66,8 @@ body {
 /* ------------------------------ good */
 
 @font-face {
-  font-family: TheFourthAvenue; 
-  src: url('../public/assets/fonts/TheFourthAvenue.otf') format('truetype'),
+  font-family: TheFourthAvenue;
+  src: url("../public/assets/fonts/TheFourthAvenue.otf") format("truetype");
 }
 
 .gonestone {
@@ -78,12 +78,84 @@ body {
 /* ------------------------------ */
 
 @font-face {
-  font-family: Mariyam; 
-  src: url('../public/assets/fonts/Mariyam.ttf') format('truetype'),
+  font-family: Mariyam;
+  src: url("../public/assets/fonts/Mariyam.ttf") format("truetype");
 }
 
 .gonestone {
   font-family: Mariyam;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+
+@font-face {
+  font-family: Wordan;
+  src: url("../public/assets/fonts/Wordan.ttf") format("truetype");
+}
+
+.gonestone {
+  font-family: Wordan;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+
+@font-face {
+  font-family: Ernesthuge;
+  src: url("../public/assets/fonts/Ernesthuge.ttf") format("truetype");
+}
+
+.gonestone {
+  font-family: Ernesthuge;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+
+@font-face {
+  font-family: Betterlett;
+  src: url("../public/assets/fonts/Betterlett.ttf") format("truetype");
+}
+
+.gonestone {
+  font-family: Betterlett;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+
+@font-face {
+  font-family: Anders;
+  src: url("../public/assets/fonts/Anders.ttf") format("truetype");
+}
+
+.gonestone {
+  font-family: Anders;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+
+@font-face {
+  font-family: Bestlife;
+  src: url("../public/assets/fonts/Bestlife.ttf") format("truetype");
+}
+
+.gonestone {
+  font-family: Bestlife;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+
+@font-face {
+  font-family: Timeburnerbold;
+  src: url("../public/assets/fonts/Timeburnerbold.ttf") format("truetype");
+}
+
+.gonestone {
+  font-family: Timeburnerbold;
 }
 
 /* ------------------------------ */
