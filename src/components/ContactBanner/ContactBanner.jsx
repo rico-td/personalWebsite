@@ -5,87 +5,38 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { useGSAP } from "@gsap/react";
+import TextPlugin from "gsap/TextPlugin";
+gsap.registerPlugin(TextPlugin);
 
 import "./ContactBanner.css";
 
 const ContactBanner = () => {
   useGSAP(() => {
     // infinite move animation for the contact banner
-    const tlBanner = gsap.timeline({ repeat: -1 });
+    const tlBanner = gsap.timeline({ repeat: -1, yoyo: true });
 
-    tlBanner.to(".contact-mover", {
+    tlBanner.to(".name-banner", {
       x: "-100%",
-      duration: 10,
-      ease: "none",
-      repeat: -1,
-    });
-
-    const contactBannerHoverIn = () => {
-      tlBanner.pause();
-
-      gsap.to(".contact-banner", {
-        color: "var(--background-dark)",
-        backgroundColor: "var(--background-light)",
-        transition: "all .3s ease-in",
-      });
-    };
-
-    const contactBannerHoverOut = () => {
-      tlBanner.resume();
-
-      gsap.to(".contact-banner", {
-        color: "var(--background-light)",
-        backgroundColor: "var(--background-dark)",
-        transition: "all .3s ease-out",
-      });
-    };
-
-    // hover animation for the contact banner
-    const bannerHTMLElement = document.querySelector(".contact-banner");
-    bannerHTMLElement.addEventListener("mouseenter", () => {
-      contactBannerHoverIn();
-    });
-    bannerHTMLElement.addEventListener("mouseleave", () => {
-      contactBannerHoverOut();
+      duration: 20,
+      ease: "easeInOut",
     });
   }, []);
 
-  // create 5 elements for the contact banner
-  const elements = [];
-  for (let i = 0; i < 5; i++) {
-    elements.push(
-      <div key={i} className="contact-mover pr-[75px] inline-flex">
-        <span id="textElementContact">exampleMailForTest@gmail.com</span>
-      </div>
-    );
-  }
-
   return (
     <>
-      <button
-        onClick={() => {
-          const contactAdress = document.querySelector(
-            "#textElementContact"
-          ).innerHTML;
-          console.log(contactAdress);
-        }}
-        className="contact-copy-button absolute top-0 left-0 uppercase font-light text-2xl"
-      >
-        <div
-          className="contact-banner w-[100vh] h-[50px] fixed top-0 left-0 flex items-center whitespace-nowrap
-            overflow-hidden py-2 cursor-pointer z-99"
-        >
-          <div>{elements}</div>
-        </div>
-      </button>
+      <div className="name-banner absolute z-99 bottom-[4vh] left-0 w-[100%] pointer-events-none">
+        <h1 className="flex relative w-[100%] text-[var(--text-light)]">
+          <span>Riccardo Schroeder</span>
+          &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+          <span>Riccardo Schroeder</span>
+          &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+          <span>Riccardo Schroeder</span>
+          &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+          <span>Riccardo Schroeder</span>
+        </h1>
+      </div>
     </>
   );
 };
 
 export default ContactBanner;
-
-// transform-origin: left top;
-// transform: translateZ(0) rotate(-90deg) translateX(-100%);
-// background-color: var(--background-dark);
-// z-index: 99;
-// cursor: pointer;
