@@ -1,9 +1,7 @@
 import "./App.css";
-import ContactBanner from "./components/ContactBanner/ContactBanner";
-import Navbar from "./components/Navbar/Navbar";
+import { ContactBanner, Navbar, LoadingScreen } from "./components";
 
-import backgroundPic from "../public/assets/images/hero_kurz.png";
-import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
+// import backgroundPic from "../public/assets/images/hero_kurz.png";
 
 function App() {
   return (
