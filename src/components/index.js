@@ -1,3 +1,3 @@
-export { default as ContactBanner } from "./ContactBanner/ContactBanner";
-export { default as Navbar } from "./Navbar/Navbar";
-export { default as LoadingScreen } from "./LoadingScreen/LoadingScreen";
+export { default as ContactBanner } from "./ContactBanner/ContactBanner.jsx";
+export { default as Navbar } from "./Navbar/Navbar.jsx";
+export { default as LoadingScreen } from "./LoadingScreen/LoadingScreen.jsx";
