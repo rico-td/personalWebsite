@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install dependencies
-        uses: npm install
+        run: npm install
 
       - name: List components directory
         run: ls -la src/components
