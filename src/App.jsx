@@ -6,15 +6,16 @@ import { ContactBanner, Navbar, LoadingScreen } from "./components";
 function App() {
   return (
     <>
-      <main>
-        <Navbar />
-        <LoadingScreen />
-        <ContactBanner />
+      <Navbar />
+      <LoadingScreen />
+      <ContactBanner />
 
-        <div className="h-[100vh] bg-[var(--background-dark)]"></div>
-        <div className="h-[100vh] bg-white"></div>
-        <div className="h-[100vh] bg-red-500"></div>
-      </main>
+      <div className="h-[100vh] bg-[var(--background-gray)]"> </div>
+      <div className="h-[100vh] bg-[var(--ruined-smores)]"> </div>
+      <div className="h-[100vh] bg-[var(--polish-metal)]"></div>
+      <div className="h-[100vh] bg-[var(--stargazing)]"></div>
+      <div className="h-[100vh] bg-[var(--armor-wash)]"></div>
+      <div className="h-[100vh] bg-[var(--absolute-zero)]"></div>
     </>
   );
 }

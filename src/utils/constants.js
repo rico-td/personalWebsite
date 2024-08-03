@@ -1,0 +1,30 @@
+export const welcomeTexts = [
+  "hallo.",
+  "hola.",
+  // "नमस्ते",
+  "ciao.",
+  "hej.",
+  "witaj.",
+  // "你好",
+  "hello.",
+  "hola.",
+  // "नमस्ते",
+  "ciao.",
+  "hej.",
+  "witaj.",
+  // "你好",
+  "hello.",
+  "hola.",
+  // "नमस्ते",
+  "ciao.",
+  "hej.",
+  "witaj.",
+  // "你好",
+  "hello.",
+];
+
+export const personalInfo = {
+  name: "Riccardo Schröder",
+  email: "johndoe@example.com",
+  skills: ["HTML", "CSS", "JavaScript", "React", "GSAP", "Git", "GitHub"],
+};

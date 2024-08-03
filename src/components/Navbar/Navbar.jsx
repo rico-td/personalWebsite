@@ -9,6 +9,11 @@ import "./Navbar.css";
 
 const Navbar = () => {
   useGSAP(() => {
+    // const onEnter = () => {
+    //   gsap.to(".wrapper", {
+    //     backgroundColor: "var(--background-dark)",
+    //     color: "var(--text-light)",
+    //     backdropFilter
     // const onHover = () => {
     //   gsap.to(".wrapper", {
     //     backgroundColor: "var(--background-light)",
@@ -50,32 +55,27 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="h-[80px] w-[110vw] flex justify-between items-center text-[var(--text-dark)] bg-[var(--background-light)] transform -rotate-[1deg]">
-      <ul className="flex gap-5 ml-10 tracking-widest text-l font-bold sm:text-2xl sm:font-normal lg:text-3xl">
-        <li>
-          <a className="" href="/">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/">Portfolio</a>
-        </li>
-        <li>
-          <a href="/">Contact</a>
-        </li>
-      </ul>
-      <div className="wrapper-btn flex justify-center items-center mr-[3rem]">
-        <a
-          className="btn text-2xl flex justify-center items-center transform -translate-x-[10vw] "
-          href="/"
-        >
-          RS
-        </a>
-      </div>
+    <header className="navbar-wrapper">
+      <nav className="navbar">
+        <ul className="nav-menu">
+          <li>
+            <a href="/">Work</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="/">Contact</a>
+          </li>
+        </ul>
+        <a href="/">Home</a>
 
-      <div className="mouseEffekt fixed top-0 left-0 w-10 h-10 rounded-full bg-white pointer-events-none"></div>
+        <div className="mouseEffekt fixed top-0 left-0 w-5 h-5 rounded-full bg-white pointer-events-none"></div>
+      </nav>
     </header>
   );
 };
 
 export default Navbar;
+
+// sm:font-normal lg:text-3xl

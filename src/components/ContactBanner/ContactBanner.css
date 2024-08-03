@@ -1,16 +1,28 @@
-.contact-banner {
-  color: var(--text-light);
-  background-color: var(--background-dark);
-  border-bottom: 2px solid var(--hightlight);
-  transform-origin: left top;
-  transform: translateZ(0) rotate(-90deg) translateX(-100%);
+.name-banner-wrapper p {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-left: 0.5em;
+  white-space: nowrap;
+
+  letter-spacing: 0.5rem;
+  font-size: max(3em, 9vw);
+  color: var(--background-light);
+}
+.name-banner-wrapper {
+  position: absolute;
+  width: 100%;
+  /* height: 100svh; */
+  z-index: 9;
+  left: 0;
+  bottom: 4vh;
+  pointer-events: none;
+  /* align-items: center; */
 }
 
-.name-banner h1 {
-  font-family: "Exquite", sans-serif;
-  padding-left: 0.5em;
-  font-size: max(3em, 9vw);
-  white-space: nowrap;
-  pointer-events: none;
-  letter-spacing: 1.5rem;
+.name-banner {
+}
+
+.separator {
+  margin: 0 2rem;
 }

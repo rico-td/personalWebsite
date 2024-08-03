@@ -1,0 +1,52 @@
+.loader-wrapper {
+  font-family: "Exquite", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: var(--background-light);
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+
+  color: var(--ruined-smores);
+}
+
+.hello-text-single {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+}
+
+.hello-text-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.world-text {
+  color: var(--polish-metal);
+}
+
+@media only screen and (min-width: 768px) {
+  .loader {
+    font-size: 2em;
+    gap: 4rem;
+  }
+}

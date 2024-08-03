@@ -4,12 +4,18 @@
 
 /* global variables */
 :root {
-  --background-dark: #121212 !important;
-  --background-light: #f8f9fc !important;
-  --background-gray: #999d9e !important;
-  --text-light: #ffffff !important;
-  --text-dark: #121212 !important;
-  --hightlight: #5e191c !important;
+  --background-dark: #121212;
+  --background-light: #f8f9fc;
+  --background-gray: #999d9e;
+  --text-light: #ffffff;
+  --text-dark: #121212;
+  --hightlight: #5e191c;
+
+  --armor-wash: #030303;
+  --stargazing: #424348;
+  --absolute-zero: #024bb9;
+  --ruined-smores: #101113;
+  --polish-metal: #8298b0;
 }
 
 /* styles for root element */
