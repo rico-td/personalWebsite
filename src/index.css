@@ -16,13 +16,8 @@
   --absolute-zero: #024bb9;
   --ruined-smores: #101113;
   --polish-metal: #8298b0;
-}
 
-/* styles for root element */
-#root {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  --navbar-height: 80px;
 }
 
 /* styles for all elements */

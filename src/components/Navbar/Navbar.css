@@ -1,13 +1,19 @@
-.navbar {
-  position: sticky;
+.navbar-wrapper {
+  position: absolute;
+  z-index: 9;
   width: 100%;
-  height: 80px;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  height: var(--navbar-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 4vh;
   padding-right: 4vh;
-  background-color: var(--background-gray);
+  background-color: var(--background-dark);
 }
 
 .navbar > :nth-child(2) {

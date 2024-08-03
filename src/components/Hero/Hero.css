@@ -1,0 +1,21 @@
+.hero-wrapper {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: var(--background-gray);
+  overflow: hidden;
+}
+
+.img-wrapper {
+  width: 50rem;
+  transform: translateY(5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  min-width: 500px;
+}

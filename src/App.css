@@ -1,8 +1,7 @@
 body {
-  background-color: var(--background-dark);
+  /* background-color: var(--background-dark); */
   font-family: "Exquite", sans-serif;
   /* font-family: "Gonestone", sans-serif; */
-  overflow: hidden;
 }
 
 /* ------------------------------ */
