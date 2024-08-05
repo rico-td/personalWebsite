@@ -10,12 +10,8 @@ function App() {
       <Navbar />
       <Hero />
       {/* <ContactBanner /> */}
-      <div className="h-[100vh] bg-[var(--polish-metal)]"></div>
-      <div className="h-[100vh] bg-[var(--background-gray)]"></div>
-      <div className="h-[100vh] bg-[var(--ruined-smores)]"> </div>
-      <div className="h-[100vh] bg-[var(--stargazing)]"></div>
-      <div className="h-[100vh] bg-[var(--armor-wash)]"></div>
-      <div className="h-[100vh] bg-[var(--absolute-zero)]"></div>
+      <div className="h-[100vh] bg-[var(--background-light)]"></div>
+
       <Footer />
     </div>
   );

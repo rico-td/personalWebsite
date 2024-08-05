@@ -6,16 +6,15 @@
 :root {
   --background-dark: #121212;
   --background-light: #f8f9fc;
-  --background-gray: #999d9e;
   --text-light: #ffffff;
   --text-dark: #121212;
-  --hightlight: #5e191c;
 
   --armor-wash: #030303;
   --stargazing: #424348;
   --absolute-zero: #024bb9;
   --ruined-smores: #101113;
   --polish-metal: #8298b0;
+  --stonish-gray: #999d9e;
 
   --navbar-height: 80px;
 }
@@ -30,9 +29,7 @@
 }
 
 body {
-  /* background-color: var(--background-dark); */
   font-family: "AukimLight", sans-serif;
-  /* font-family: "Gonestone", sans-serif; */
 }
 
 /* ------------------------------ */

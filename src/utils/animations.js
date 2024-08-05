@@ -16,7 +16,7 @@ export default function loadingScreenAnimation() {
     // animation group-text "hello"
     loadingScreenTimeline.to(spanElements[i], {
       opacity: 1,
-      duration: 0.2,
+      duration: 0.15,
       ease: "easeOut",
       onComplete: () => {
         if (i < welcomeTexts.length - 1) {
@@ -33,7 +33,7 @@ export default function loadingScreenAnimation() {
   loadingScreenTimeline.to(".loader-wrapper", {
     start: "top",
     y: "-100%",
-    duration: 1.2,
+    duration: 1,
     ease: "easeIn",
   });
 

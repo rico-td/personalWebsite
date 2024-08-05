@@ -14,7 +14,6 @@ const Router = createBrowserRouter(
       element: <App />,
       errorElement: <ErrorPage />,
     },
-
     {
       path: "/work",
       element: <Work />,

@@ -13,28 +13,21 @@
   align-items: center;
   padding-left: 4vh;
   padding-right: 4vh;
-  background-color: var(--background-dark);
-}
-
-.navbar > :nth-child(2) {
+  /* background-color: var(--ruined-smores); */
+  text-transform: lowercase;
+  font-size: max(1.2em, 1.2vw);
   color: var(--background-light);
-  font-size: 1em;
 }
 
 .nav-menu {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: space-between;
-  font-size: 1em;
   letter-spacing: widest;
 }
 
-.nav-menu a {
-  color: var(--background-light);
-}
-
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .menu {
     font-size: 2rem;
   }
-}
+} */

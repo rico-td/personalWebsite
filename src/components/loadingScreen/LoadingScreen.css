@@ -8,7 +8,7 @@
   z-index: 9999;
   overflow: hidden;
   pointer-events: none;
-  background-color: var(--background-light);
+  background-color: var(--ruined-smores);
 }
 
 .loader {
@@ -22,7 +22,7 @@
   font-size: 1.5rem;
   font-weight: lighter;
 
-  color: var(--ruined-smores);
+  color: var(--background-light);
 }
 
 .hello-text-single {

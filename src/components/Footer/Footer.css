@@ -1,23 +1,28 @@
 .footer-wrapper {
-  /* width: 100%; */
   height: 100vh;
   height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: var(--ruined-smores);
+  background-color: var(--polish-metal);
   color: var(--text-light);
+  text-transform: lowercase;
 }
 
 .footer {
   display: flex;
-  gap: 3rem;
+  width: 100%;
+  height: 100%;
+  gap: 5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.footer h2 {
+  font-size: max(2rem, 4vw);
+}
 .get-in-touch-btn {
   display: flex;
   justify-content: center;
