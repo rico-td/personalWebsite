@@ -1,21 +1,22 @@
 .hero-wrapper {
   height: 100vh;
-
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   background-color: var(--background-gray);
   overflow: hidden;
 }
 
 .img-wrapper {
   width: 50rem;
-  transform: translateY(5rem);
+  transform: translateY(8rem);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero-img {
-  min-width: 500px;
+  min-width: 700px;
+  object-fit: cover;
 }

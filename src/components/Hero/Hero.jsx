@@ -11,7 +11,6 @@ const Hero = () => {
       <div className="img-wrapper">
         <img className="hero-img" src={bg} alt="" />
       </div>
-      <ContactBanner />
     </main>
   );
 };

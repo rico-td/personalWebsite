@@ -13,28 +13,22 @@ import "./ContactBanner.css";
 
 // import modules
 import { personalInfo } from "../../utils/constants.js";
+import { bannerAnimation } from "../../utils/animations.js";
 
 const ContactBanner = () => {
-  useGSAP(() => {
-    // infinite move animation for the contact banner
-    const tlBanner = gsap.timeline({ repeat: -1, yoyo: true });
-
-    tlBanner.to(".name-banner-wrapper", {
-      x: "-150%",
-      duration: 16,
-      ease: "easeInOut",
-    });
-  }, []);
+  useGSAP(bannerAnimation, []);
 
   return (
-    <div className="name-banner-wrapper">
-      <p>
-        <span> {personalInfo.name}</span>
+    <div className="banner-wrapper">
+      <div className="banner-content">
+        <span className="">{personalInfo.name}</span>
+        {/* <span className="separator">-</span>
+        <span>Frontend Developer</span>
         <span className="separator">-</span>
         <span>{personalInfo.email}</span>
         <span className="separator">-</span>
-        <span>{personalInfo.skills[2]}</span>
-      </p>
+        <span>{personalInfo.skills[2]} </span> */}
+      </div>
     </div>
   );
 };

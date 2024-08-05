@@ -1,26 +1,24 @@
-.name-banner-wrapper p {
-  display: flex;
-  position: relative;
-  width: 100%;
-  padding-left: 0.5em;
-  white-space: nowrap;
-
-  letter-spacing: 0.5rem;
-  font-size: max(3em, 9vw);
-  color: var(--background-light);
-}
-.name-banner-wrapper {
+.banner-wrapper {
   position: absolute;
-  width: 100%;
-  /* height: 100svh; */
-  z-index: 9;
   left: 0;
   bottom: 4vh;
+  width: 600px;
+  z-index: 99;
   pointer-events: none;
-  /* align-items: center; */
 }
 
-.name-banner {
+.banner-content {
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding-left: 0.5em;
+  white-space: nowrap;
+  pointer-events: none;
+
+  letter-spacing: 0.5rem;
+  font-size: max(3.5em, 6vw);
+  color: var(--background-light);
+  margin-left: 50px;
 }
 
 .separator {

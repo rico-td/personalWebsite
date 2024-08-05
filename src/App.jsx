@@ -9,7 +9,7 @@ function App() {
       <LoadingScreen />
       <Navbar />
       <Hero />
-
+      {/* <ContactBanner /> */}
       <div className="h-[100vh] bg-[var(--polish-metal)]"></div>
       <div className="h-[100vh] bg-[var(--background-gray)]"></div>
       <div className="h-[100vh] bg-[var(--ruined-smores)]"> </div>

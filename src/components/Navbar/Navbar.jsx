@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -59,16 +60,16 @@ const Navbar = () => {
       <nav className="navbar">
         <ul className="nav-menu">
           <li>
-            <a href="/">Work</a>
+            <Link to="/work">Work</Link>
           </li>
           <li>
-            <a href="/">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
 
         <div className="mouseEffekt fixed top-0 left-0 w-5 h-5 rounded-full bg-white pointer-events-none"></div>
       </nav>

@@ -14,7 +14,7 @@ import "./LoadingScreen.css";
 import { welcomeTexts } from "../../utils/constants.js";
 
 // import animation
-import handleAnimation from "../../utils/loaderAnimation.js";
+import loadingScreenAnimation from "../../utils/animations.js";
 
 // Component starts here
 // ---------------------------------------------------------------------
@@ -34,7 +34,7 @@ const LoadingScreen = () => {
   // handle state for loading
   const [isLoading, setisLoading] = useState(false);
 
-  useGSAP(handleAnimation, []);
+  useGSAP(loadingScreenAnimation, []);
 
   return (
     <div className="loader-wrapper">
