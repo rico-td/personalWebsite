@@ -10,35 +10,6 @@ import "./Navbar.css";
 
 const Navbar = () => {
   useGSAP(() => {
-    // const onEnter = () => {
-    //   gsap.to(".wrapper", {
-    //     backgroundColor: "var(--background-dark)",
-    //     color: "var(--text-light)",
-    //     backdropFilter
-    // const onHover = () => {
-    //   gsap.to(".wrapper", {
-    //     backgroundColor: "var(--background-light)",
-    //     color: "var(--text-dark)",
-    //     backdropFilter: "blur(20px)",
-    //   });
-    // };
-
-    // const onLeave = () => {
-    //   gsap.to(".homeButton", {
-    //     backgroundColor: "var(--background-dark)",
-    //     color: "var(--text-light)",
-    //   });
-    // };
-
-    // const homeButtonElement = document.querySelector(".wrapper-btn");
-    // homeButtonElement.addEventListener("mouseenter", () => {
-    //   onHover();
-    // });
-
-    // homeButtonElement.addEventListener("mouseleave", () => {
-    //   onLeave();
-    // });
-
     gsap.set(".mouseEffekt", { xPercent: -50, yPercent: -50 });
     let xTo = gsap.quickTo(".mouseEffekt", "x", {
         duration: 3,
@@ -79,4 +50,31 @@ const Navbar = () => {
 
 export default Navbar;
 
-// sm:font-normal lg:text-3xl
+// const onEnter = () => {
+//   gsap.to(".wrapper", {
+//     backgroundColor: "var(--background-dark)",
+//     color: "var(--text-light)",
+//     backdropFilter
+// const onHover = () => {
+//   gsap.to(".wrapper", {
+//     backgroundColor: "var(--background-light)",
+//     color: "var(--text-dark)",
+//     backdropFilter: "blur(20px)",
+//   });
+// };
+
+// const onLeave = () => {
+//   gsap.to(".homeButton", {
+//     backgroundColor: "var(--background-dark)",
+//     color: "var(--text-light)",
+//   });
+// };
+
+// const homeButtonElement = document.querySelector(".wrapper-btn");
+// homeButtonElement.addEventListener("mouseenter", () => {
+//   onHover();
+// });
+
+// homeButtonElement.addEventListener("mouseleave", () => {
+//   onLeave();
+// });

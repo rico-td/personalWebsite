@@ -11,6 +11,6 @@ export const welcomeTexts = [
 
 export const personalInfo = {
   name: "John Smith",
-  email: "johndoe@example.com",
+  email: "johnsmith@example.com",
   skills: ["HTML", "CSS", "JavaScript", "React", "GSAP", "Git", "GitHub"],
 };
