@@ -13,7 +13,7 @@ const Footer = () => {
     <section className="footer-wrapper">
       <div className="footer">
         <h2 className="text-5xl">let's get in touch. </h2>
-        <button className="contact-me-btn w-[150px] aspect-square rounded-[50%] font-extrabold">
+        <button className="contact-me-btn w-[150px] aspect-square rounded-[50%]">
           <Link to="/contact">contact me</Link>
         </button>
         <a href="mailto:{personalInfo.email}">

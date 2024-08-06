@@ -4,7 +4,8 @@
 
 /* global variables */
 :root {
-  --highlight: #8298b0;
+  --highlight: #f8f9fc;
+  /* --highlight: #8298b0; */
   --background-dark: #03101f;
 
   --light: #f8f9fc;
