@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--polish-metal);
+  /* background-color: var(--dark-blue); */
   overflow: hidden;
 }
 

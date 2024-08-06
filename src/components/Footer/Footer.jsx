@@ -13,14 +13,14 @@ const Footer = () => {
     <section className="footer-wrapper">
       <div className="footer">
         <h2 className="text-5xl">let's get in touch. </h2>
-        <button className="w-[150px] aspect-square bg-[var(--background-light)] text-[var(--background-dark)] rounded-[50%]">
+        <button className="contact-me-btn w-[150px] aspect-square rounded-[50%] font-extrabold">
           <Link to="/contact">contact me</Link>
         </button>
         <a href="mailto:{personalInfo.email}">
           <button className="get-in-touch-btn">{personalInfo.email}</button>
         </a>
 
-        <div className="w-[90%] flex justify-center items-center gap-[3rem] p-[2rem] text-sm border-t-2 border-[var(--text-light)]">
+        <div className="wrapper-social-logos w-[90%] flex justify-center items-center gap-[3rem] p-[2rem] text-sm">
           <div className="flex flex-col justify-center gap-[.5rem] items-center">
             <a id="link" href="https://www.google.de/?hl=en">
               <FaGithub size={"2.5rem"} />

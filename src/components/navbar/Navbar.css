@@ -16,7 +16,7 @@
   /* background-color: var(--ruined-smores); */
   text-transform: lowercase;
   font-size: max(1.2em, 1.2vw);
-  color: var(--background-light);
+  color: var(--highlight);
 }
 
 .nav-menu {

@@ -29,6 +29,7 @@ const Navbar = () => {
   return (
     <header className="navbar-wrapper">
       <nav className="navbar">
+        <Link to="/">John Smith</Link>
         <ul className="nav-menu">
           <li>
             <Link to="/work">Work</Link>
@@ -40,7 +41,6 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <Link to="/">Home</Link>
 
         <div className="mouseEffekt fixed top-0 left-0 w-5 h-5 rounded-full bg-white pointer-events-none"></div>
       </nav>

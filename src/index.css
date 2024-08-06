@@ -4,8 +4,10 @@
 
 /* global variables */
 :root {
-  --background-dark: #121212;
-  --background-light: #f8f9fc;
+  --highlight: #8298b0;
+  --background-dark: #03101f;
+
+  --light: #f8f9fc;
   --text-light: #ffffff;
   --text-dark: #121212;
 
@@ -15,6 +17,12 @@
   --ruined-smores: #101113;
   --polish-metal: #8298b0;
   --stonish-gray: #999d9e;
+  --blue-gray: #303e4e;
+  --dark-blue: #03101f;
+  --goldish: #756d54;
+  --rich-black: #0f1a20;
+  --papaya-whip: #ffefd3;
+  --baby-blue: #c4cbce;
 
   --navbar-height: 80px;
 }
@@ -30,6 +38,8 @@
 
 body {
   font-family: "AukimLight", sans-serif;
+  background-color: var(--background-dark);
+  color: var(--highlight);
 }
 
 /* ------------------------------ */

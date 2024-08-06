@@ -5,8 +5,8 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--polish-metal);
-  color: var(--text-light);
+  /* background-color: var(--dark-blue); */
+  color: var(--highlight);
   text-transform: lowercase;
 }
 
@@ -23,6 +23,12 @@
 .footer h2 {
   font-size: max(2rem, 4vw);
 }
+
+.contact-me-btn {
+  background-color: var(--highlight);
+  color: var(--ruined-smores);
+}
+
 .get-in-touch-btn {
   display: flex;
   justify-content: center;
@@ -30,6 +36,10 @@
   height: 50px;
   padding: 1rem 2rem;
   color: var(--text-dark);
-  background-color: var(--text-light);
+  background-color: var(--highlight);
   border-radius: 2rem;
+}
+
+.wrapper-social-logos {
+  border-top: 1px solid var(--highlight);
 }
