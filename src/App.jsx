@@ -1,14 +1,20 @@
 import "./App.css";
 import { ContactBanner, Navbar, Footer, LoadingScreen } from "./components";
+import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu.jsx";
 
 import Hero from "./components/Hero/Hero.jsx";
 
 function App() {
   return (
-    <div className="app-wrapper">
+    <div className="app">
       <LoadingScreen />
-      <Navbar />
-      <Hero />
+      {/* <HamburgerMenu /> */}
+
+      <section>
+        <Navbar />
+        <Hero />
+      </section>
+
       {/* <ContactBanner /> */}
       <div className="h-[100vh] bg-[var(--background-light)]"></div>
 

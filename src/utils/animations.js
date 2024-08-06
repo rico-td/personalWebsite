@@ -29,6 +29,8 @@ export default function loadingScreenAnimation() {
     });
   });
 
+  // loadingScreenTimeline.pause();
+
   //   animation backgorund
   loadingScreenTimeline.to(".loader-wrapper", {
     start: "top",

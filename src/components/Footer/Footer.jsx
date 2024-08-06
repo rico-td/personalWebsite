@@ -16,7 +16,7 @@ const Footer = () => {
         <button className="contact-me-btn w-[150px] aspect-square rounded-[50%]">
           <Link to="/contact">contact me</Link>
         </button>
-        <a href="mailto:{personalInfo.email}">
+        <a href={`mailto:${personalInfo.email}`}>
           <button className="get-in-touch-btn">{personalInfo.email}</button>
         </a>
 

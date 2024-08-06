@@ -1,0 +1,24 @@
+.nav-menu-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  font-size: 1rem;
+  background-color: var(--highlight);
+}
+
+/* .hamburger-btn {
+  position: absolute;
+  inset: 0;
+  /* background-color: red; */
+
+.hamburger-wrap {
+  position: sticky;
+  top: 15rem;
+  right: 2rem;
+  display: flex;
+  justify-content: end;
+}

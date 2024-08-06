@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { useGSAP } from "@gsap/react";
 
 import "./Navbar.css";
+import { personalInfo } from "../../utils/constants";
 
 const Navbar = () => {
   useGSAP(() => {
@@ -27,23 +28,25 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="navbar-wrapper">
-      <nav className="navbar">
-        <Link to="/">John Smith</Link>
-        <ul className="nav-menu">
-          <li>
-            <Link to="/work">Work</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+    <header>
+      <nav className="nav-bar">
+        <Link to="/">{personalInfo.name}</Link>
 
-        <div className="mouseEffekt fixed top-0 left-0 w-5 h-5 rounded-full bg-white pointer-events-none"></div>
+        <div className="nav-menu-right-wrap">
+          <ul>
+            <li>
+              <Link to="/work">Work</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <div className="mouseEffekt fixed top-0 left-0 w-5 h-5 rounded-full bg-white pointer-events-none"></div>
     </header>
   );
 };

@@ -1,32 +1,33 @@
-.hero-wrapper {
+.hero-wrap {
   position: relative;
   top: 0;
   left: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  height: calc(100vh - var(--navbar-height));
 }
 
-.container-heading {
+.hero-heading-wrap {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 30%;
+  top: 35%;
   right: 10%;
-  font-size: max(1em, 4vw);
+  font-size: max(1.2em, 2.8vw);
   white-space: nowrap;
   font-weight: 700;
   letter-spacing: -0.1rem;
 }
 
+.hero-heading-wrap h1 {
+  display: flex;
+  gap: 0.7rem;
+}
+
 @media only screen and (max-width: 768px) {
-  .container-heading {
-    top: 89%;
-    left: 5%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
+  .hero-heading-wrap {
+    inset: auto auto 4% 5%;
+  }
+  .hero-heading-wrap h1 {
+    gap: 0.5rem;
   }
 }
 
