@@ -1,0 +1,103 @@
+.topnav
+    height: var(--navbar-height)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-inline: 1.8em
+    text-transform: lowercase
+    font-size: clamp(1.1rem, 1rem + 1vw, 1.3rem)
+    color: white    
+
+    button 
+        display: flex
+        justify-content: center
+        align-items: center
+        background: none
+        border: none
+
+        @media (width >= 40em) 
+            display: none
+
+    &__open[aria-expanded='true'] + .topnav__menu 
+        translate: 0
+
+    &__close 
+        padding: 1.8rem 1.8rem
+        display: block
+        margin-inline-start: auto
+        margin-block-end: 8rem
+
+        display: flex
+        justify-content: center
+        align-items: center
+        background: none
+        border: none
+
+        @media (width >= 40em) 
+            display: none
+
+    &__menu 
+        @media (width < 40em) 
+            position: fixed
+            inset: 0
+            z-index: 999
+            background-color: white
+            translate: 100vw
+            transition: translate .5s ease-in-out
+
+    &__links 
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 1.2em
+        letter-spacing: widest
+
+        @media (width < 40em) 
+            color: black  
+            flex-direction: column
+            font-size: 3rem
+
+    &__item 
+        list-style-type: none
+
+    &__open
+        display: flex
+        justify-content: center
+        align-items: center
+        background: none
+        border: none
+
+        @media (width >= 40em) 
+            display: none
+
+
+// onHover nav-menu mit effekt -> Punkte beim hovern -> ::afer?
+// einblendung hamburger-menu abhängig vom scrollen, ab einer höhe in app injezieren und fixed machen, animieren
+// forms fertig machen
+
+// make hamburger menu its own component
+// change icon to a smaller one - no hamburger
+// chat gbt fragen warum ich den button direkt addressieren musste mit class statt mit button:
+
+// button 
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: none;
+//   border: none;
+
+//   @media (width >= 40em) 
+//     display: none;
+  
+// .topnav__close 
+//   padding: 1.8rem 1.8rem;
+//   display: block;
+//   margin-inline-start: auto;
+//   margin-block-end: 8rem;
+
+//   @media (width >= 40em) 
+//     display: none;
+  
+
+
+

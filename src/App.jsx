@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.sass";
 import { ContactBanner, Navbar, Footer, LoadingScreen } from "./components";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu.jsx";
 
