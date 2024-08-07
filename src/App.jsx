@@ -7,13 +7,11 @@ import Hero from "./components/Hero/Hero.jsx";
 function App() {
   return (
     <div className="app">
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
       {/* <HamburgerMenu /> */}
 
-      <section>
-        <Navbar />
-        <Hero />
-      </section>
+      <Navbar />
+      <Hero />
 
       {/* <ContactBanner /> */}
       <div className="h-[100vh] bg-[var(--background-light)]"></div>

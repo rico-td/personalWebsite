@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { gsap } from "gsap";
@@ -9,7 +9,26 @@ import { useGSAP } from "@gsap/react";
 import "./Navbar.css";
 import { personalInfo } from "../../utils/constants";
 
+import closeImg from "../../../public/assets/images/icons8-close.svg";
+import menuImg from "../../../public/assets/images/icons8-menu.svg";
+
 const Navbar = () => {
+  useEffect(() => {
+    const openBtn = document.querySelector("#openBtn");
+    const closeBtn = document.querySelector("#closeBtn");
+
+    function openMobileMenu() {
+      openBtn.setAttribute("aria-expanded", "true");
+    }
+
+    function closeMobileMenu() {
+      openBtn.setAttribute("aria-expanded", "false");
+    }
+
+    openBtn.addEventListener("click", openMobileMenu);
+    closeBtn.addEventListener("click", closeMobileMenu);
+  }, []);
+
   useGSAP(() => {
     gsap.set(".mouseEffekt", { xPercent: -50, yPercent: -50 });
     let xTo = gsap.quickTo(".mouseEffekt", "x", {
@@ -28,20 +47,60 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header>
-      <nav className="nav-bar">
-        <Link to="/">{personalInfo.name}</Link>
-
-        <div className="nav-menu-right-wrap">
-          <ul>
-            <li>
-              <Link to="/work">Work</Link>
+    <header className="topnav__wrapper">
+      <Link to="/">{personalInfo.name}</Link>
+      <nav>
+        {/* context for screenreaders */}
+        <span id="nav-label" hidden>
+          Navigation
+        </span>
+        {/* aria-expanded to indicate the menu is closed*/}
+        <button
+          id="openBtn"
+          className="topnav__open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 50 50"
+            width="2.5rem"
+            fill="white"
+          >
+            <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z" />
+          </svg>
+        </button>
+        {/* role for additional content on the website */}
+        <div className="topnav__menu" role="dialog" aria-labelledby="nav-label">
+          <button id="closeBtn" className="topnav__close" aria-label="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="2.5rem"
+              fill="white"
+            >
+              <path d="M 4.2382812 2.9882812 A 1.250125 1.250125 0 0 0 3.3671875 5.1347656 L 10.232422 12 L 3.3613281 18.869141 A 1.2512475 1.2512475 0 1 0 5.1308594 20.638672 L 12 13.767578 L 18.865234 20.632812 A 1.250125 1.250125 0 1 0 20.632812 18.865234 L 13.767578 12 L 20.625 5.1425781 A 1.250125 1.250125 0 1 0 18.857422 3.375 L 12 10.232422 L 5.1347656 3.3671875 A 1.250125 1.250125 0 0 0 4.2382812 2.9882812 z" />
+            </svg>
+          </button>
+          <ul className="topnav__links">
+            <li className="topnav__item">
+              <div className="topnav__link">
+                <Link to="/work">Work</Link>
+              </div>
             </li>
-            <li>
-              <Link to="/about">About</Link>
+            <li className="topnav__item">
+              <div className="topnav__link">
+                <Link className="topnav__link" to="/about">
+                  About
+                </Link>
+              </div>
             </li>
-            <li>
-              <Link to="/contact">Contact</Link>
+            <li className="topnav__item">
+              <div className="topnav__link">
+                <Link className="topnav__link" to="/contact">
+                  Contact
+                </Link>
+              </div>
             </li>
           </ul>
         </div>
