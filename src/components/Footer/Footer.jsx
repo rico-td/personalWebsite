@@ -14,7 +14,9 @@ const Footer = () => {
       <div className="footer">
         <h2 className="text-5xl">let's get in touch. </h2>
         <button className="contact-me-btn w-[150px] aspect-square rounded-[50%]">
-          <Link to="/contact">contact me</Link>
+          <Link to="/contact">
+            contact<br></br>me
+          </Link>
         </button>
         <a href={`mailto:${personalInfo.email}`}>
           <button className="get-in-touch-btn">{personalInfo.email}</button>

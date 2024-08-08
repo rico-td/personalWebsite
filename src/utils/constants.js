@@ -10,7 +10,7 @@ export const welcomeTexts = [
 ];
 
 export const personalInfo = {
-  name: "Riccardo Schneider",
+  name: "Riccardo",
   email: "johnsmith@example.com",
   skills: ["HTML", "CSS", "JavaScript", "React", "GSAP", "Git", "GitHub"],
 };

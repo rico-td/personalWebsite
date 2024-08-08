@@ -25,8 +25,8 @@
 }
 
 .contact-me-btn {
-  background-color: var(--highlight);
-  color: var(--ruined-smores);
+  color: var(--rich-black);
+  background-color: var(--text-light);
 }
 
 .get-in-touch-btn {
@@ -36,10 +36,10 @@
   height: 50px;
   padding: 1rem 2rem;
   color: var(--text-dark);
-  background-color: var(--highlight);
+  background-color: var(--text-light);
   border-radius: 2rem;
 }
 
 .wrapper-social-logos {
-  border-top: 1px solid var(--highlight);
+  border-top: 1px solid var(--text-light);
 }

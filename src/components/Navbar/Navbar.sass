@@ -7,7 +7,7 @@
 
 $text-color-light: var(--text-light)
 $text-color-dark: var(--highlight-dark)
-$bg-color-dark: var(--background-dark)
+$bg-color-dark: var(--ruined-smores)
 
 $circleHalfSize: 15px
 
@@ -27,9 +27,12 @@ $circleHalfSize: 15px
     justify-content: space-between
     align-items: center
     padding-inline: 1.8em
-    font-size: clamp(1.1rem, 1rem + 1vw, 1.3rem)
+    font-size: clamp(1.1rem, 1rem + 1vw, 1.1rem)
     color: $text-color-light
 
+    @media (width >= 40em)
+        font-family: "Panchang-Medium", sans-serif
+        
     button 
         @include placeCenter()
         background: none
@@ -56,21 +59,24 @@ $circleHalfSize: 15px
             background-color: $bg-color-dark
             translate: 100vw
             transition: translate .5s ease-in-out
+            text-transform: uppercase
 
     &__links 
         @include placeCenter()
-        gap: .2rem
+        gap: 1rem
 
         @media (width < 40em) 
             display: flex
             flex-direction: column
             align-items: flex-start
-            padding-inline-start: .8rem
+            padding-inline-start: 1.2rem
             padding-block: 3rem
-            font-size: 3rem
+            font-size: 2rem
             border-top: 1px solid $text-color-light
-
-          
+        
+    &__item:first-child
+            @media (width >= 40em)
+                display: none 
 
     &__link:hover::after
         @include createCircle()
