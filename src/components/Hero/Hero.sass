@@ -1,0 +1,48 @@
+.hero-wrap 
+    position: relative
+    top: 0
+    left: 0
+    height: calc(100vh - var(--navbar-height))
+    height: calc(100svh - var(--navbar-height))
+
+
+.hero-heading-wrap 
+    position: absolute
+    display: flex
+    flex-direction: column
+    top: 35%
+    right: 10%
+    font-size: max(1.2em, 2.8vw)
+    white-space: nowrap
+    font-weight: 700
+    letter-spacing: -0.1rem
+
+
+.hero-heading-wrap h1 
+    display: flex
+    gap: 0.7rem
+
+
+@media only screen and (max-width: 768px)
+    .hero-heading-wrap 
+        inset: auto auto 4% 5%
+    
+    .hero-heading-wrap h1 
+        gap: 0.5rem
+  
+
+// .img-wrapper 
+//   width: 70%;
+//   height: 80%;
+//   transform: translateY(8rem);
+//   padding-right: 3rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: hidden;
+
+// .hero-img 
+//   min-width: 700px;
+//   max-height: 1000px;
+//   object-fit: cover;
+  

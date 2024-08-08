@@ -8,7 +8,7 @@ import TextPlugin from "gsap/TextPlugin";
 gsap.registerPlugin(TextPlugin);
 
 // css imports
-import "./LoadingScreen.css";
+import "./LoadingScreen.sass";
 
 // import constants and utils
 import { welcomeTexts } from "../../utils/constants.js";

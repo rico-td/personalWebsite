@@ -30,7 +30,6 @@ export default function loadingScreenAnimation() {
   });
 
   // loadingScreenTimeline.pause();
-
   //   animation backgorund
   loadingScreenTimeline.to(".loader-wrapper", {
     start: "top",
@@ -47,14 +46,31 @@ export default function loadingScreenAnimation() {
   );
 }
 
+export function mouseEffektAnimation() {
+  gsap.set(".mouseEffekt", { xPercent: -50, yPercent: -50 });
+  let xTo = gsap.quickTo(".mouseEffekt", "x", {
+      duration: 3,
+      ease: "power4",
+    }),
+    yTo = gsap.quickTo(".mouseEffekt", "y", {
+      duration: 3,
+      ease: "power4",
+    });
+
+  window.addEventListener("mousemove", (e) => {
+    xTo(e.clientX);
+    yTo(e.clientY);
+  });
+}
+
 export function bannerAnimation() {
-  const banner = document.querySelector(".banner-wrapper");
-  const bannerContent = banner.firstChild;
-  if (!banner || !bannerContent || banner.childElementCount > 1) {
-    return;
-  }
-  const bannerContentClone = bannerContent.cloneNode(true);
-  banner.appendChild(bannerContentClone);
+  // const banner = document.querySelector(".banner-wrapper");
+  // const bannerContent = banner.firstChild;
+  // if (!banner || !bannerContent || banner.childElementCount > 1) {
+  //   return;
+  // }
+  // const bannerContentClone = bannerContent.cloneNode(true);
+  // banner.appendChild(bannerContentClone);
 }
 
 // const tlBanner = gsap.timeline({ repeat: -1, yoyo: true });

@@ -1,17 +1,37 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+    
+@import "../../sass/styles.sass"
+// @use 'styles'
+
+$text-color-light: var(--text-light)
+$text-color-dark: var(--highlight-dark)
+$bg-color-dark: var(--background-dark)
+
+$circleHalfSize: 15px
+
+@mixin createCircle()
+    content: ''
+    position: absolute
+    width: $circleHalfSize
+    aspect-ratio: 1/1
+    border-radius: 50%
+    z-index: 99
+    background-color: $text-color-light 
+
+
 .topnav
     height: var(--navbar-height)
     display: flex
     justify-content: space-between
     align-items: center
     padding-inline: 1.8em
-    text-transform: lowercase
     font-size: clamp(1.1rem, 1rem + 1vw, 1.3rem)
-    color: white    
+    color: $text-color-light
 
     button 
-        display: flex
-        justify-content: center
-        align-items: center
+        @include placeCenter()
         background: none
         border: none
 
@@ -27,48 +47,46 @@
         margin-inline-start: auto
         margin-block-end: 8rem
 
-        display: flex
-        justify-content: center
-        align-items: center
-        background: none
-        border: none
-
-        @media (width >= 40em) 
-            display: none
-
     &__menu 
         @media (width < 40em) 
             position: fixed
+            padding-inline: 1.2rem
             inset: 0
-            z-index: 999
-            background-color: white
+            z-index: 99
+            background-color: $bg-color-dark
             translate: 100vw
             transition: translate .5s ease-in-out
 
     &__links 
-        display: flex
-        justify-content: center
-        align-items: center
-        gap: 1.2em
-        letter-spacing: widest
+        @include placeCenter()
+        gap: .2rem
 
         @media (width < 40em) 
-            color: black  
+            display: flex
             flex-direction: column
+            align-items: flex-start
+            padding-inline-start: .8rem
+            padding-block: 3rem
             font-size: 3rem
+            border-top: 1px solid $text-color-light
 
+          
+
+    &__link:hover::after
+        @include createCircle()
+    
+        top: calc(50% - $circleHalfSize / 2 )
+        right: min(-7rem)
+       
     &__item 
         list-style-type: none
+        position: relative
 
     &__open
-        display: flex
-        justify-content: center
-        align-items: center
         background: none
         border: none
+    
 
-        @media (width >= 40em) 
-            display: none
 
 
 // onHover nav-menu mit effekt -> Punkte beim hovern -> ::afer?

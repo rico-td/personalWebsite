@@ -1,0 +1,75 @@
+/**
+* @license
+*
+* Font Family: Chillax
+* Designed by: Manushi Parikh
+* URL: https://www.fontshare.com/fonts/chillax
+* © 2024 Indian Type Foundry
+*
+* Chillax Extralight 
+* Chillax Light 
+* Chillax Regular 
+* Chillax Medium 
+* Chillax Semibold 
+* Chillax Bold 
+* Chillax Variable (Variable font)
+
+*
+*/
+
+@font-face {
+  font-family: "CooperHewitt-Thin";
+  src: url("CooperHewitt-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-ThinItalic";
+  src: url("CooperHewitt-ThinItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-Light";
+  src: url("CooperHewitt-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-LightItalic";
+  src: url("CooperHewitt-LightItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-Medium";
+  src: url("CooperHewitt-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-MediumItalic";
+  src: url("CooperHewitt-MediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-Book";
+  src: url("CooperHewitt-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: "CCooperHewitt-BookItalic";
+  src: url("CooperHewitt-BookItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-Semibold";
+  src: url("CooperHewitt-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-SemiboldItalic";
+  src: url("CooperHewitt-SemiboldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-Bold";
+  src: url("CooperHewitt-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-BoldItalic";
+  src: url("CooperHewitt-BoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-Heavy";
+  src: url("CooperHewitt-Heavy.otf") format("opentype");
+}
+@font-face {
+  font-family: "CooperHewitt-HeavyItalic";
+  src: url("CooperHewitt-HeavyItalic.otf") format("opentype");
+}

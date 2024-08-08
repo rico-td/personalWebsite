@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "./Hero.sass";
 import { IoArrowRedoOutline } from "react-icons/io5";
 
 import bg from "../../../public/assets/images/bg.png";
