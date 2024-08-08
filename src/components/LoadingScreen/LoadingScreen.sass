@@ -1,10 +1,11 @@
+@use "../../sass/index.sass" as *
+  
 .loader-wrapper 
   // font-family: "Exquite", sans-serif
   position: fixed
   inset: 0
   z-index: 9999
   pointer-events: none
-  background-color: var(--ruined-smores)
 
 .loader 
   height: 100vh
@@ -15,7 +16,8 @@
   gap: 0.3em
   font-size: 1.5rem
   font-weight: lighter
-  color: var(--background-light)
+  background-color: $background-light
+  color: $text-dark
 
 .hello-text-single 
   position: absolute
@@ -32,7 +34,7 @@
   align-items: center
 
 .world-text 
-  color: var(--polish-metal)
+  color: $polish-metal
 
 @media only screen and (min-width: 768px) 
   .loader 

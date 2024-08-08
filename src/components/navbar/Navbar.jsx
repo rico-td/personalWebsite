@@ -15,8 +15,8 @@ import { handleTopnavAccessibility } from "../../utils/functions.js";
 import { mouseEffektAnimation } from "../../utils/animations.js";
 
 // assets imports
-import closeImg from "../../../public/assets/images/icons8-close.svg";
-import menuImg from "../../../public/assets/images/icons8-menu.svg";
+import closeImg from "../../../public/assets/icons/icons8-close.svg";
+import menuImg from "../../../public/assets/icons/icons8-menu.svg";
 
 const Navbar = () => {
   //
@@ -57,6 +57,7 @@ const Navbar = () => {
         <div className="topnav__menu" role="dialog" aria-labelledby="nav-label">
           <button id="closeBtn" className="topnav__close" aria-label="close">
             <svg
+              class="svg"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="2.5rem"

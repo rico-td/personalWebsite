@@ -1,11 +1,11 @@
+// react
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-
-import "./sass/styles.sass";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+// components
+import App from "./App.jsx";
+import "./main.sass";
 import { Work, About, Contact, ErrorPage } from "./pages/index.js";
 
 const Router = createBrowserRouter(
