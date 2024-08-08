@@ -1,13 +1,9 @@
-@tailwind base
-@tailwind components
-@tailwind utilities
-    
-@import "../../sass/styles.sass"
-// @use 'styles'
+@use "../../sass/index.sass" as *
 
-$text-color-light: var(--text-light)
-$text-color-dark: var(--highlight-dark)
-$bg-color-dark: var(--ruined-smores)
+$colorMenu: $night
+$colorBorder: $tyrian-purple-darker
+$colorBtn: $white-b-color
+$colortext: $white-b-color
 
 $circleHalfSize: 15px
 
@@ -18,20 +14,19 @@ $circleHalfSize: 15px
     aspect-ratio: 1/1
     border-radius: 50%
     z-index: 99
-    background-color: $text-color-light 
-
+    background-color: $text-light
 
 .topnav
-    height: var(--navbar-height)
+    height: $navbar-height
     display: flex
     justify-content: space-between
     align-items: center
     padding-inline: 1.8em
     font-size: clamp(1.1rem, 1rem + 1vw, 1.1rem)
-    color: $text-color-light
+    // font-size: clamp(1.1rem, 1rem + 1vw, 2rem)
 
     @media (width >= 40em)
-        font-family: "Panchang-Medium", sans-serif
+        
         
     button 
         @include placeCenter()
@@ -56,14 +51,14 @@ $circleHalfSize: 15px
             padding-inline: 1.2rem
             inset: 0
             z-index: 99
-            background-color: $bg-color-dark
+            background-color: $colorMenu
             translate: 100vw
             transition: translate .5s ease-in-out
-            text-transform: uppercase
+            // text-transform: uppercase
 
     &__links 
         @include placeCenter()
-        gap: 1rem
+        gap: 2rem
 
         @media (width < 40em) 
             display: flex
@@ -71,8 +66,10 @@ $circleHalfSize: 15px
             align-items: flex-start
             padding-inline-start: 1.2rem
             padding-block: 3rem
-            font-size: 2rem
-            border-top: 1px solid $text-color-light
+            font-size: 2.5rem
+            font-family: "Panchang-Light", sans-serif
+            color: $colortext
+            border-top: 1px solid $colorBorder
         
     &__item:first-child
             @media (width >= 40em)
@@ -80,6 +77,8 @@ $circleHalfSize: 15px
 
     &__link:hover::after
         @include createCircle()
+        @media (width > 40em)
+            display: none 
     
         top: calc(50% - $circleHalfSize / 2 )
         right: min(-7rem)
@@ -92,6 +91,8 @@ $circleHalfSize: 15px
         background: none
         border: none
     
+    .svg
+        fill: $colorBtn
 
 
 

@@ -8,8 +8,8 @@ import ContactBanner from "../ContactBanner/ContactBanner";
 
 const Hero = () => {
   return (
-    <main className="hero-wrap">
-      <div className="hero-heading-wrap">
+    <main className="hero">
+      <div className="hero__heading">
         <IoArrowRedoOutline size={35} style={{ transform: "rotate(50deg)" }} />
         <h1>
           <span>Frontend</span>

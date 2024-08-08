@@ -1,34 +1,38 @@
-.hero-wrap 
+@use "../../sass/index.sass" as *
+
+$replace-jobBanner: 40rem 
+$resize-jobBanner: 60rem
+
+.hero 
     position: relative
     top: 0
     left: 0
-    height: calc(100vh - var(--navbar-height))
-    height: calc(100svh - var(--navbar-height))
+    height: calc(100vh - $navbar-height)
+    height: calc(100svh - $navbar-height)
 
+    &__heading
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 35%
+        right: 10%
+        font-size: clamp(1rem, 2.5vw, 4rem)
+        white-space: nowrap
+        font-weight: 700
+        // letter-spacing: -0.1rem
 
-.hero-heading-wrap 
-    position: absolute
-    display: flex
-    flex-direction: column
-    top: 35%
-    right: 10%
-    font-size: max(1.2em, 2.8vw)
-    white-space: nowrap
-    font-weight: 700
-    letter-spacing: -0.1rem
+        @media (width < $replace-jobBanner)
+            inset: auto auto 4% 5%
 
+        h1 
+            display: flex
+            gap: 0.7rem
 
-.hero-heading-wrap h1 
-    display: flex
-    gap: 0.7rem
+            @media (width < $replace-jobBanner)
+                gap: 0.5rem
+            @media (width < $resize-jobBanner)
+                font-family: "Panchang-Light", sans-serif
 
-
-@media only screen and (max-width: 768px)
-    .hero-heading-wrap 
-        inset: auto auto 4% 5%
-    
-    .hero-heading-wrap h1 
-        gap: 0.5rem
   
 
 // .img-wrapper 
