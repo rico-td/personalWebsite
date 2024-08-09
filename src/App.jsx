@@ -2,11 +2,16 @@ import React, { useState } from "react";
 
 import "./App.sass";
 
-import { ContactBanner, Topnav, Footer, LoadingScreen } from "./components";
+import {
+  ContactBanner,
+  Topnav,
+  TopnavMobile,
+  Footer,
+  LoadingScreen,
+} from "./components";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu.jsx";
 
 import Hero from "./components/Hero/Hero.jsx";
-import TopnavMobile from "./components/TopnavMobile/TopnavMobile.jsx";
 
 function App() {
   const [data, setdata] = useState();
