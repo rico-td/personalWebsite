@@ -7,14 +7,29 @@
       type="image/svg+xml"
       href="/public/assets/images/icons8-frontend-96.png"
     />
+
+    <!-- 
+        due to the first phones with 320px width, 
+        web pages were rendered in desktop size and just zoomed out to fit content.
+        that looked better than broken layout.
+        this leads in wrong width if you want to get the value of the screen width.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Riccardo Bartenstein</title>
+    <title>Riccardo</title>
+
+    <!-- api request -->
+    <!-- rel: relation between current document and target -->
+    <!-- preconnet: ensures an early connection to the server before content is requested-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- target, provide the actual font files -->
+    <!-- Crossorigin for security reasons, as the request is sent to a third-party server -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="" />
   </head>
   <body>
     <div id="root"></div>

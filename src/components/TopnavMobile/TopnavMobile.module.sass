@@ -1,0 +1,133 @@
+@use "../../sass/index.sass" as *
+
+$colorMenu: $night
+$colorBorder: $tyrian-purple-darker
+$colorBtn: $white-b-color
+$colortext: $white-b-color
+
+$circleHalfSize: 15px
+
+@mixin createCircle()
+    content: ''
+    position: absolute
+    width: $circleHalfSize
+    aspect-ratio: 1/1
+    border-radius: 50%
+    z-index: 99
+    background-color: $text-light
+
+.topnav
+    height: $Topnav-height
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-inline: 1.8em
+    font-size: clamp(1.1rem, 1rem + 1vw, 1.1rem)
+    // font-size: clamp(1.1rem, 1rem + 1vw, 2rem)
+
+    @media (width >= 40em)
+        
+        
+    button 
+        @include placeCenter()
+        background: none
+        border: none
+
+        @media (width >= 40em) 
+            display: none
+
+    &__open[aria-expanded='true'] + .topnav__menu 
+        translate: 0
+
+    &__close 
+        // padding: 2rem 1rem
+        display: block
+        margin-inline-start: auto
+        margin-block-end: 4.5rem
+
+    &__menu
+        
+
+        @media (width < 40em) 
+            border: 1px solid $black-b-color
+            position: fixed
+            padding: 2rem
+            // inset: 0
+            inset: 0 0 0 25%
+            z-index: 99
+            background-color: $colorMenu
+            translate: 100vw
+            transition: translate .5s ease-in-out
+        @media (width < 30em)
+            inset: 0
+
+    &__links 
+        @include placeCenter()
+        gap: 1rem
+
+        @media (width < 40em) 
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding-inline-start: 1rem
+            padding-block: 3rem
+            font-size: 2rem
+            font-family: "Panchang-Light", sans-serif
+            color: $colortext
+            border-top: 1px solid $colorBorder
+        
+    &__item:first-child
+            @media (width >= 40em)
+                display: none 
+
+    &__link:hover::after
+        @include createCircle()
+        @media (width > 40em)
+            display: none 
+    
+        top: calc(50% - $circleHalfSize / 2 )
+        right: min(-7rem)
+       
+    &__item 
+        list-style-type: none
+        position: relative
+
+    &__open
+        background: none
+        border: none
+    
+    .svg
+        fill: $colorBtn
+
+
+
+// onHover nav-menu mit effekt -> Punkte beim hovern -> ::afer?
+// einblendung hamburger-menu abhängig vom scrollen, ab einer höhe in app injezieren und fixed machen, animieren
+// forms fertig machen
+
+// make hamburger menu its own component
+// change icon to a smaller one - no hamburger
+// chat gbt fragen warum ich den button direkt addressieren musste mit class statt mit button:
+
+// button 
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: none;
+//   border: none;
+
+//   @media (width >= 40em) 
+//     display: none;
+  
+// .topnav__close 
+//   padding: 1.8rem 1.8rem;
+//   display: block;
+//   margin-inline-start: auto;
+//   margin-block-end: 8rem;
+
+//   @media (width >= 40em) 
+//     display: none;
+  
+
+
+

@@ -2,8 +2,8 @@
   position: relative;
   top: 0;
   left: 0;
-  height: calc(100vh - var(--navbar-height));
-  height: calc(100svh - var(--navbar-height));
+  height: calc(100vh - var(--Topnav-height));
+  height: calc(100svh - var(--Topnav-height));
 }
 
 .hero-heading-wrap {

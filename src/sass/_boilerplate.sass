@@ -1,4 +1,17 @@
 :root
+    overflow: scroll 
+    /* Beibehaltung der Scrollfähigkeit */
+  
+    /* Für Firefox */
+    scrollbar-width: none
+  
+    /* Für Internet Explorer und Edge */
+    -ms-overflow-style: none 
+
+    /* Für WebKit-basierte Browser */
+    &::-webkit-scrollbar 
+        display: none 
+    /* Versteckt die Scrollleiste */
     
 *,
 *::after,

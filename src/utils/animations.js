@@ -47,12 +47,12 @@ export default function loadingScreenAnimation() {
 }
 
 export function mouseEffektAnimation() {
-  gsap.set(".mouseEffekt", { xPercent: -50, yPercent: -50 });
-  let xTo = gsap.quickTo(".mouseEffekt", "x", {
+  gsap.set(".js-mouseEffekt", { xPercent: -50, yPercent: -50 });
+  let xTo = gsap.quickTo(".js-mouseEffekt", "x", {
       duration: 3,
       ease: "power4",
     }),
-    yTo = gsap.quickTo(".mouseEffekt", "y", {
+    yTo = gsap.quickTo(".js-mouseEffekt", "y", {
       duration: 3,
       ease: "power4",
     });
