@@ -22,9 +22,6 @@ const Topnav = () => {
   //
   useEffect(() => {
     handleTopnavAccessibility();
-  }, []);
-
-  useGSAP(() => {
     mouseEffektAnimation();
   }, []);
 
@@ -47,7 +44,7 @@ const Topnav = () => {
         </button>
         {/* role for additional content on the website */}
         <div
-          className={style.topnav__menu}
+          className={`${style.topnav__menu} topnav__menu`}
           role="dialog"
           aria-labelledby="nav-label"
         >
@@ -57,7 +54,7 @@ const Topnav = () => {
             aria-label="close"
           >
             <svg
-              class="svg"
+              className="svg"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="2.5rem"
